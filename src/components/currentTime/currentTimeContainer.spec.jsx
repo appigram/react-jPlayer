@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockCurrentTime = () =>
-  <div />;
+const mockCurrentTime = () => <div />;
 const currentTimeContainer = proxyquire('./currentTimeContainer', {
   './currentTime': mockCurrentTime,
 }).default;

@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockPlay = ({ play, paused }) =>
-  <button onClick={() => play(id, paused)} />;
+const mockPlay = ({ play, paused }) => <button onClick={() => play(id, paused)} />;
 const PlayContainer = proxyquire('./playContainer', {
   './play': mockPlay,
 }).default;

@@ -8,8 +8,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockVideo = () =>
-  <video />;
+const mockVideo = () => <video />;
 const videoContainer = proxyquire('./videoContainer', {
   './video': mockVideo,
 }).default;

@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import { compose, lifecycle as setLifecycle, withHandlers, withContext } from 'recompose';
+import {
+  compose, lifecycle as setLifecycle, withHandlers, withContext,
+} from 'recompose';
 import { canSetVolume, connectWithId } from 'react-jplayer-utils';
 
 import states from './states/states';
@@ -7,8 +9,10 @@ import JPlayer from './jPlayer';
 import { setOption, setMedia } from '../../actions/actions';
 
 const mapStateToProps = ({ jPlayers }, ownProps) => {
-  const { id, keyBindings, children,
-    className } = ownProps;
+  const {
+    id, keyBindings, children,
+    className,
+  } = ownProps;
 
   return {
     media: jPlayers[id].media,

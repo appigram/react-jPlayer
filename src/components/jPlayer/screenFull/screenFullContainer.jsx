@@ -1,6 +1,8 @@
 import screenfull from 'screenfull';
 import { connectWithId } from 'react-jplayer-utils';
-import { compose, lifecycle, withHandlers, renderNothing } from 'recompose';
+import {
+  compose, lifecycle, withHandlers, renderNothing,
+} from 'recompose';
 
 import { setOption } from '../../../actions/actions';
 

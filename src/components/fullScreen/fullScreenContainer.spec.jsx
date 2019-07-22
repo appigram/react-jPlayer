@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockFullScreen = ({ setFullScreen }) =>
-  <button onClick={() => setFullScreen(id, true)} />;
+const mockFullScreen = ({ setFullScreen }) => <button onClick={() => setFullScreen(id, true)} />;
 const FullScreenContainer = proxyquire('./fullScreenContainer', {
   './fullScreen': mockFullScreen,
 }).default;

@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockBrowserUnsupported = () =>
-  <div />;
+const mockBrowserUnsupported = () => <div />;
 const browserUnsupportedContainer = proxyquire('./browserUnsupportedContainer', {
   './browserUnsupported': mockBrowserUnsupported,
 }).default;

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import { classes } from '../../util/constants';
 
-const Mute = ({ setMute, id, muted, children }) => (
+const Mute = ({
+  setMute, id, muted, children,
+}) => (
   <button className={classes.MUTE} onClick={() => setMute(id, !muted)}>
     {children}
   </button>

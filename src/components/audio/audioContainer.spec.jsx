@@ -8,8 +8,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockAudio = () =>
-  <audio />;
+const mockAudio = () => <audio />;
 const audioContainer = proxyquire('./audioContainer', {
   './audio': mockAudio,
 }).default;

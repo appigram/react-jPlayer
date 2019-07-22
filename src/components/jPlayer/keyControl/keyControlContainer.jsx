@@ -1,8 +1,12 @@
 import { connectWithId } from 'react-jplayer-utils';
-import { compose, lifecycle as setLifecycle, withHandlers, renderNothing } from 'recompose';
+import {
+  compose, lifecycle as setLifecycle, withHandlers, renderNothing,
+} from 'recompose';
 import merge from 'lodash.merge';
 
-import { setOption, play, pause, setMute, setVolume } from '../../../actions/actions';
+import {
+  setOption, play, pause, setMute, setVolume,
+} from '../../../actions/actions';
 import { keyIgnoredElementNames } from '../../../util/constants';
 
 const mapStateToProps = ({ jPlayers }, { id }) => ({
@@ -19,8 +23,8 @@ const mergeProps = (stateProps, { dispatch }, { keyBindings, id }) => ({
   keyBindings: merge({}, {
     play: {
       key: 80, // p
-      fn: () => (stateProps.paused ? dispatch(play(id)) :
-        dispatch(pause(id))),
+      fn: () => (stateProps.paused ? dispatch(play(id))
+        : dispatch(pause(id))),
     },
     fullScreen: {
       key: 70, // f

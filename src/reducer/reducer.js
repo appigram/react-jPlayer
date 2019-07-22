@@ -1,7 +1,9 @@
 import { limitValue } from 'react-jplayer-utils';
 
 import { initialState } from '../initializeOptions/initializeOptions';
-import { actionNames, formats as supportedFormats, defaultStatus, defaultOptions } from '../util/constants';
+import {
+  actionNames, formats as supportedFormats, defaultStatus, defaultOptions,
+} from '../util/constants';
 import urlNotSetError from '../util/errorHandlers/urlNotSetError';
 import noFormatSupportedError from '../util/errorHandlers/noFormatSupportedError';
 
@@ -157,9 +159,7 @@ const focus = (state, id) => {
 };
 
 const focusOnFirstKeyEnabledPlayer = (state) => {
-  const firstKeyEnabledPlayer = Object.keys(state).filter(key =>
-    state[key].keyEnabled,
-  ).shift();
+  const firstKeyEnabledPlayer = Object.keys(state).filter(key => state[key].keyEnabled).shift();
 
   if (state[firstKeyEnabledPlayer] !== undefined) {
     const focusedPlayer = {
@@ -178,8 +178,8 @@ const focusOnFirstKeyEnabledPlayer = (state) => {
 
 const updateJPlayer = (state, action, fn) => {
   const value = fn(state[action.id], action);
-  const newState = state[action.id].keyEnabled ? focus(state, action.id) :
-    focusOnFirstKeyEnabledPlayer(state);
+  const newState = state[action.id].keyEnabled ? focus(state, action.id)
+    : focusOnFirstKeyEnabledPlayer(state);
   const jPlayer = newState[action.id];
 
   return {

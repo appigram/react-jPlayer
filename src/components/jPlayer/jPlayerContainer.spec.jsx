@@ -8,8 +8,7 @@ import { defaultOptions } from '../../util/constants';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockJPlayer = ({ onMouseMoveCapture }) =>
-  <div onMouseMoveCapture={onMouseMoveCapture} />;
+const mockJPlayer = ({ onMouseMoveCapture }) => <div onMouseMoveCapture={onMouseMoveCapture} />;
 const JPlayerContainer = proxyquire('./jPlayerContainer', {
   './jPlayer': mockJPlayer,
   './states/states': () => 'jp-test',

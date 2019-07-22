@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import { compose, defaultProps as setDefaultProps, mapProps, withHandlers, getContext } from 'recompose';
+import {
+  compose, defaultProps as setDefaultProps, mapProps, withHandlers, getContext,
+} from 'recompose';
 import { connectWithId } from 'react-jplayer-utils';
 
 import Events from './events';

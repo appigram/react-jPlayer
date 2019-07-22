@@ -5,7 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 import { defaultOptions } from './constants';
 
-Enzyme.configure({ adapter: new Adapter() });
+Enzyme.configure({ adapter: new Adapter(), disableLifecycleMethods: true });
 
 describe('convertTime', () => {
   it('sets timeText to empty if time is NaN', () => {

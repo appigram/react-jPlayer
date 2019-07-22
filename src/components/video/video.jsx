@@ -2,7 +2,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { compose, branch, renderComponent, renderNothing } from 'recompose';
+import {
+  compose, branch, renderComponent, renderNothing,
+} from 'recompose';
 
 import Media from '../media/mediaContainer';
 
@@ -94,4 +96,3 @@ export default compose(
     renderComponent(Video),
   ),
 )(renderNothing(null));
-

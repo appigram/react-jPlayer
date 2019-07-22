@@ -5,7 +5,9 @@ import expect from 'expect';
 import proxyquire from 'proxyquire';
 import containerSetup from '../../util/specHelpers/containerSetup.spec';
 
-import { setMedia, setOption, setVolume, setMute, setPlayHead, play, pause } from '../../actions/actions';
+import {
+  setMedia, setOption, setVolume, setMute, setPlayHead, play, pause,
+} from '../../actions/actions';
 
 proxyquire.noCallThru();
 

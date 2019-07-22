@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockRepeat = ({ loop }) =>
-  <button onClick={loop} />;
+const mockRepeat = ({ loop }) => <button onClick={loop} />;
 const RepeatContainer = proxyquire('./repeatContainer', {
   './repeat': mockRepeat,
 }).default;

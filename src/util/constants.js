@@ -11,8 +11,8 @@ export const actionNames = {
 };
 
 export const errors = {
-  FORMAT_NO_SUPPORT: 'It is not possible to play any media format ' +
-  'provided on this browser using your current defaultOptions.',
+  FORMAT_NO_SUPPORT: 'It is not possible to play any media format '
+  + 'provided on this browser using your current defaultOptions.',
   URL_NO_SUPPORT: 'The media URL could not be loaded.',
   URL_NOT_SET: 'Attempted to issue media playback commands while no media url is set.',
   INVALID_GLOBAL_METHOD: 'You passed an invalid jPlayer method to the global array',
@@ -21,8 +21,8 @@ export const errors = {
 export const hints = {
   FORMAT_NO_SUPPORT: 'The browser may not support these file types.',
   URL_NO_SUPPORT: 'Check the media URL is valid.',
-  URL_NOT_SET: 'Pass the media through the defaultOptions or use the setMedia() ' +
-  'action that is passed into the component props.',
+  URL_NOT_SET: 'Pass the media through the defaultOptions or use the setMedia() '
+  + 'action that is passed into the component props.',
   INVALID_GLOBAL_METHOD: 'Remove the invalid method from the "global" option',
 };
 

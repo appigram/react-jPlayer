@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockMute = ({ setMute }) =>
-  <button onClick={() => setMute(id, true)} />;
+const mockMute = ({ setMute }) => <button onClick={() => setMute(id, true)} />;
 const MuteContainer = proxyquire('./muteContainer', {
   './mute': mockMute,
 }).default;

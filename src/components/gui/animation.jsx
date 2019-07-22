@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 import Gui from './gui';
 
-const Animation = ({ fullScreen, guiFadeOut, onMouseMove, children }) => (
+const Animation = ({
+  fullScreen, guiFadeOut, onMouseMove, children,
+}) => (
   <Motion
     defaultStyle={{ opacity: 1 }}
     style={{ opacity: fullScreen ? spring(guiFadeOut ? 0 : 1, [250]) : 1 }}

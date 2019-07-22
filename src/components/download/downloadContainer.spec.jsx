@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockDownload = () =>
-  <div />;
+const mockDownload = () => <div />;
 const downloadContainer = proxyquire('./downloadContainer', {
   './download': mockDownload,
 }).default;

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { compose, branch, renderComponent, renderNothing } from 'recompose';
+import {
+  compose, branch, renderComponent, renderNothing,
+} from 'recompose';
 
 import { classes } from '../../util/constants';
 
@@ -22,4 +24,3 @@ export default compose(
     renderComponent(Poster),
   ),
 )(renderNothing(null));
-

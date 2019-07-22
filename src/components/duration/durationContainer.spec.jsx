@@ -7,8 +7,7 @@ import containerSetup from '../../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockDuration = () =>
-  <div />;
+const mockDuration = () => <div />;
 const durationContainer = proxyquire('./durationContainer', {
   './duration': mockDuration,
 }).default;

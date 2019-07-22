@@ -9,8 +9,10 @@ import ErrorLogger from './errorLogger/errorLoggerContainer';
 import TimeDisplay from './timeDisplay/timeDisplayContainer';
 
 const JPlayer = (props) => {
-  const { className, keyBindings, children,
-    onMouseMoveCapture, id } = props;
+  const {
+    className, keyBindings, children,
+    onMouseMoveCapture, id,
+  } = props;
 
   return (
     <div
