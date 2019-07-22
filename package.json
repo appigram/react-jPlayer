@@ -46,6 +46,11 @@
     "postversion": "git push && git push --tags",
     "toc": "markdown-toc -i README.md && git add README.md"
   },
+  "pre-commit": [
+    "lint",
+    "test",
+    "toc"
+  ],
   "browserslist": [
     "chrome >= 15",
     "firefox >= 15",
