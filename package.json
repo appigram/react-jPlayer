@@ -1,14 +1,14 @@
 {
-  "name": "react-jplayer",
-  "version": "7.2.0",
+  "name": "@appigram/react-jplayer",
+  "version": "7.2.1",
   "description": "Html5 audio and video player library for React",
-  "author": "Martin Dawson <u1356770@gmail.com>",
+  "author": "Eugene Sysmanov <appigram@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jplayer/react-jPlayer.git"
+    "url": "https://github.com/appigram/react-jPlayer.git"
   },
   "bugs": {
-    "url": "https://github.com/jplayer/react-jPlayer/issues"
+    "url": "https://github.com/appigram/react-jPlayer/issues"
   },
   "keywords": [
     "audio",
@@ -24,7 +24,7 @@
     "html5-video",
     "media"
   ],
-  "homepage": "https://github.com/jplayer/react-jPlayer",
+  "homepage": "https://github.com/appigram/react-jPlayer",
   "license": "MIT",
   "main": "./lib/index.js",
   "files": [
@@ -104,7 +104,7 @@
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.14.3",
     "expect": "^24.8.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jsdom": "^15.1.1",
@@ -124,7 +124,7 @@
     "redux-mock-store": "^1.5.3",
     "rimraf": "^2.6.3",
     "style-loader": "^0.23.1",
-    "webpack": "^4.36.1",
+    "webpack": "^4.39.0",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   },
@@ -139,6 +139,6 @@
     "react-motion": "^0.5.2",
     "react-transition-group": "^4.2.1",
     "recompose": "^0.30.0",
-    "screenfull": "^4.2.0"
+    "screenfull": "^4.2.1"
   }
 }
