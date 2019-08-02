@@ -1,4 +1,4 @@
-import { connectWithId, getElementOffset } from 'react-jplayer-utils';
+import { connectWithId, getElementOffset } from '@appigram/react-jplayer-utils';
 import { compose, withHandlers } from 'recompose';
 
 import { setVolume } from '../../actions/actions';

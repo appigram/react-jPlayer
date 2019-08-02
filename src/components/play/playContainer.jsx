@@ -1,4 +1,4 @@
-import { connectWithId } from 'react-jplayer-utils';
+import { connectWithId } from '@appigram/react-jplayer-utils';
 
 import { play, pause } from '../../actions/actions';
 import Play from './play';

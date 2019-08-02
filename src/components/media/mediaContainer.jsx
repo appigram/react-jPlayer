@@ -1,4 +1,4 @@
-import { connectWithId, toPercentage, toRelativePercentage } from 'react-jplayer-utils';
+import { connectWithId, toPercentage, toRelativePercentage } from '@appigram/react-jplayer-utils';
 import { compose, lifecycle as setLifecycle, withHandlers } from 'recompose';
 
 import Media from './media';

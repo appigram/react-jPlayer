@@ -1,4 +1,4 @@
-import { connectWithId } from 'react-jplayer-utils';
+import { connectWithId } from '@appigram/react-jplayer-utils';
 import { compose, withHandlers, lifecycle as setLifecycle } from 'recompose';
 
 import Bar from './bar';

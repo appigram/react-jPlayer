@@ -1,4 +1,4 @@
-import { connectWithId, formatArtistAndTitle } from 'react-jplayer-utils';
+import { connectWithId, formatArtistAndTitle } from '@appigram/react-jplayer-utils';
 
 import Title from './title';
 

@@ -1,5 +1,5 @@
 import { compose, withHandlers } from 'recompose';
-import { connectWithId, getElementOffset } from 'react-jplayer-utils';
+import { connectWithId, getElementOffset } from '@appigram/react-jplayer-utils';
 
 import { setPlayHead } from '../../actions/actions';
 import SeekBar from './seekBar';

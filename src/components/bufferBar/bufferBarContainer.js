@@ -1,6 +1,6 @@
 import { compose, withHandlers, lifecycle as setLifecycle } from 'recompose';
 
-import { connectWithId } from 'react-jplayer-utils';
+import { connectWithId } from '@appigram/react-jplayer-utils';
 import BufferBar from './bufferBar';
 
 const mapStateToProps = ({ jPlayers }, { id }) => ({

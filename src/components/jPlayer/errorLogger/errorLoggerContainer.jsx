@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { connectWithId } from 'react-jplayer-utils';
+import { connectWithId } from '@appigram/react-jplayer-utils';
 import { compose, lifecycle, renderNothing } from 'recompose';
 
 const mapStateToProps = ({ jPlayers }, { id }) => ({

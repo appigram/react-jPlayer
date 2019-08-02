@@ -1,4 +1,4 @@
-import { connectWithId, convertTime } from 'react-jplayer-utils';
+import { connectWithId, convertTime } from '@appigram/react-jplayer-utils';
 import {
   compose, lifecycle as setLifecycle, withHandlers, renderNothing,
 } from 'recompose';

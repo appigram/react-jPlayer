@@ -1,5 +1,5 @@
 import expect from 'expect';
-import { convertTime } from 'react-jplayer-utils';
+import { convertTime } from '@appigram/react-jplayer-utils';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
