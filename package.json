@@ -1,6 +1,6 @@
 {
   "name": "@appigram/react-jplayer",
-  "version": "7.2.6",
+  "version": "7.2.7",
   "description": "Html5 audio and video player library for React",
   "author": "Eugene Sysmanov <appigram@gmail.com>",
   "repository": {
