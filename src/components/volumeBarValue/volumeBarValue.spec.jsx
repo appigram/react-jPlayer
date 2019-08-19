@@ -4,7 +4,7 @@ import VolumeBarValue from './volumeBarValue';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(VolumeBarValue, {
+const setup = (props) => componentSetup(VolumeBarValue, {
   volume: 1,
   muted: false,
   verticalVolume: false,

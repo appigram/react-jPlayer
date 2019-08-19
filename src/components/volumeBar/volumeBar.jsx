@@ -5,7 +5,7 @@ import Bar from '../barContainer';
 import VolumeBarValue from '../volumeBarValue/volumeBarValueContainer';
 import { classes } from '../../util/constants';
 
-const VolumeBar = props => (
+const VolumeBar = (props) => (
   <Bar
     clickMoveBar={props.clickMoveBar}
     touchMoveBar={props.touchMoveBar}

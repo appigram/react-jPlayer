@@ -4,7 +4,7 @@ import BufferBar from './bufferBar';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(BufferBar, {
+const setup = (props) => componentSetup(BufferBar, {
   setCanvas: expect.createSpy(),
   ...props,
 });

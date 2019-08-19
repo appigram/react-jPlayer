@@ -7,7 +7,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
   paused: jPlayers[id].paused,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   play: (id, paused) => {
     if (paused) {
       dispatch(play(id));

@@ -4,7 +4,7 @@ import expect from 'expect';
 import Bar from './bar';
 import componentSetup from '../util/specHelpers/componentSetup.spec';
 
-const setup = props => componentSetup(Bar, {
+const setup = (props) => componentSetup(Bar, {
   children: <div className="bar" />,
   onClick: expect.createSpy(),
   onMouseDown: expect.createSpy(),

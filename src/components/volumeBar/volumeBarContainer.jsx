@@ -9,7 +9,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  moveVolumeBar: props => (bar, e) => {
+  moveVolumeBar: (props) => (bar, e) => {
     const offset = getElementOffset(bar);
     const w = bar.getBoundingClientRect().width;
     const h = bar.getBoundingClientRect().height;
@@ -25,8 +25,8 @@ const handlers = {
 };
 
 const secondHandlers = {
-  clickMoveBar: props => (bar, e) => props.moveVolumeBar(bar, e),
-  touchMoveBar: props => (bar, e) => {
+  clickMoveBar: (props) => (bar, e) => props.moveVolumeBar(bar, e),
+  touchMoveBar: (props) => (bar, e) => {
     // Stop page scrolling
     e.preventDefault();
 

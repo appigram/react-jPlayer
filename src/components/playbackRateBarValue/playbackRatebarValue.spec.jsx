@@ -4,7 +4,7 @@ import PlaybackRateBarValue from './playbackRateBarValue';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(PlaybackRateBarValue, {
+const setup = (props) => componentSetup(PlaybackRateBarValue, {
   verticalPlaybackRate: false,
   minPlaybackRate: 0,
   maxPlaybackRate: 1,

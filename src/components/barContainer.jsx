@@ -15,11 +15,11 @@ const handlers = () => {
     setBar: () => (ref) => {
       bar = ref;
     },
-    onClick: props => e => props.clickMoveBar(bar, e),
+    onClick: (props) => (e) => props.clickMoveBar(bar, e),
     onTouchStart: () => () => {
       dragging = true;
     },
-    onTouchMove: props => (e) => {
+    onTouchMove: (props) => (e) => {
       if (props.barDrag && dragging) {
         props.touchMoveBar(bar, e);
       }
@@ -27,7 +27,7 @@ const handlers = () => {
     onTouchEnd: () => () => {
       dragging = false;
     },
-    onMouseMove: props => (e) => {
+    onMouseMove: (props) => (e) => {
       if (props.barDrag && dragging) {
         props.clickMoveBar(bar, e);
       }

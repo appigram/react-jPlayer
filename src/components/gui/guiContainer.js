@@ -15,14 +15,14 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  onMouseMove: props => () => {
+  onMouseMove: (props) => () => {
     if (props.fullScreen) {
       props.setOption(props.id, 'startGuiFadeOut', false);
 
-      timeoutIds.forEach(timeoutId => clearTimeout(timeoutId));
+      timeoutIds.forEach((timeoutId) => clearTimeout(timeoutId));
     }
   },
-  fadeOutHandler: props => () => {
+  fadeOutHandler: (props) => () => {
     props.setOption(props.id, 'guiFadeOut', true);
   },
 };

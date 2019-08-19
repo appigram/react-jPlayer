@@ -33,7 +33,7 @@ const events = {
   onWaiting: expect.createSpy(),
 };
 
-const setup = props => componentSetup(Media, {
+const setup = (props) => componentSetup(Media, {
   setCurrentMedia: expect.createSpy(),
   updateMediaStatus: expect.createSpy(),
   tracks: [],

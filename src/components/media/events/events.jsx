@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Events = props => (
+const Events = (props) => (
   React.cloneElement(React.Children.only(props.children),
     {
       onAbort: props.onAbort,

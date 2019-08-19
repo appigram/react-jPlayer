@@ -29,7 +29,7 @@ Download.propTypes = {
 
 export default compose(
   branch(
-    props => props.free,
+    (props) => props.free,
     renderComponent(Download),
   ),
 )(renderNothing(null));

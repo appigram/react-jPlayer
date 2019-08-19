@@ -18,7 +18,7 @@ Title.propTypes = {
 
 export default compose(
   branch(
-    props => props.title,
+    (props) => props.title,
     renderComponent(Title),
   ),
 )(renderNothing(null));

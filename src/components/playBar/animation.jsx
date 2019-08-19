@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 import PlayBar from './playBar';
 
-const Animation = props => (
+const Animation = (props) => (
   <Motion style={{ smoothWidth: spring(props.currentPercentAbsolute, [250]) }}>
-    {values => (
+    {(values) => (
       <PlayBar
         smoothWidth={values.smoothWidth}
         smoothPlayBar={props.smoothPlayBar}

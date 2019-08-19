@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Bar from '../barContainer';
 import { classes } from '../../util/constants';
 
-const SeekBar = props => (
+const SeekBar = (props) => (
   <Bar
     clickMoveBar={props.clickMoveBar}
     touchMoveBar={props.touchMoveBar}

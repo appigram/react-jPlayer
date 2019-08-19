@@ -36,7 +36,7 @@ const handlers = () => {
     setCurrentMedia: () => (ref) => {
       currentMedia = ref;
     },
-    updateMediaStatus: props => () => {
+    updateMediaStatus: (props) => () => {
       const currentPercentAbsolute = toPercentage(currentMedia.currentTime, currentMedia.duration);
 
       // Is infinite when live streaming
@@ -50,16 +50,16 @@ const handlers = () => {
       props.setOption(props.id, 'currentTime', currentMedia.currentTime);
       props.setOption(props.id, 'playbackRate', currentMedia.playbackRate);
     },
-    updateMediaSrc: props => () => {
+    updateMediaSrc: (props) => () => {
       if (props.src !== null) {
         currentMedia.src = props.src;
       }
     },
-    updateMediaTime: props => () => {
+    updateMediaTime: (props) => () => {
       currentMedia.currentTime = props.newTime;
       props.setOption(props.id, 'newTime', null);
     },
-    updateMediaTimeAfterSeeking: props => () => {
+    updateMediaTimeAfterSeeking: (props) => () => {
       const seekableEnd = getSeekableEnd();
 
       // TODO: Investigate why some .mp3 urls don't fire media events enough (http://www.davidgagne.net/m/song.mp3).
@@ -75,14 +75,14 @@ const handlers = () => {
         props.setOption(props.id, 'currentPercentRelative', getCurrentPercentRelative());
       }
     },
-    updateMediaPlayState: props => () => {
+    updateMediaPlayState: (props) => () => {
       if (props.paused) {
         currentMedia.pause();
       } else {
         currentMedia.play();
       }
     },
-    updateOtherMediaValues: props => () => {
+    updateOtherMediaValues: (props) => () => {
       currentMedia.defaultPlaybackRate = props.defaultPlaybackRate;
       currentMedia.playbackRate = props.playbackRate;
       currentMedia.preload = props.preload;

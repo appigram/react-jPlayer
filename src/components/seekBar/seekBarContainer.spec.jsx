@@ -31,7 +31,7 @@ const mockTouchEvent = {
   ],
   preventDefault: expect.createSpy(),
 };
-const mockSeekbar = props => (
+const mockSeekbar = (props) => (
   <div
     onClick={() => props.clickMoveBar(mockBar, mockClickEvent)}
     onTouchStart={() => props.touchMoveBar(mockBar, mockTouchEvent)}

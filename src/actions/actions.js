@@ -5,7 +5,7 @@ export const setMedia = (id, media) => ({
   id,
   media,
 });
-export const clearMedia = id => ({
+export const clearMedia = (id) => ({
   type: actionNames.CLEAR_MEDIA,
   id,
 });
@@ -34,7 +34,7 @@ export const setMute = (id, mute) => ({
   id,
   mute,
 });
-export const focus = id => ({
+export const focus = (id) => ({
   type: actionNames.FOCUS,
   id,
 });

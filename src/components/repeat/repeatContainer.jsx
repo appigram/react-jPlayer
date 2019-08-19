@@ -9,7 +9,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  loop: props => () => props.setOption(props.id, 'loop', !props.loop),
+  loop: (props) => () => props.setOption(props.id, 'loop', !props.loop),
 };
 
 export default compose(

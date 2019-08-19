@@ -8,7 +8,7 @@ import {
 
 import Media from '../media/mediaContainer';
 
-const Video = props => (
+const Video = (props) => (
   <Media
     onAbort={props.onAbort}
     onCanPlay={props.onCanPlay}
@@ -92,7 +92,7 @@ Video.propTypes = {
 
 export default compose(
   branch(
-    props => props.require,
+    (props) => props.require,
     renderComponent(Video),
   ),
 )(renderNothing(null));

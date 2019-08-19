@@ -256,6 +256,6 @@ describe('EventsContainer', () => {
   });
 
   afterEach(() => {
-    Object.keys(events).forEach(key => events[key].reset());
+    Object.keys(events).forEach((key) => events[key].reset());
   });
 });

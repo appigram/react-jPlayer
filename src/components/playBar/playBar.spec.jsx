@@ -4,7 +4,7 @@ import PlayBar from './playBar';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(PlayBar, {
+const setup = (props) => componentSetup(PlayBar, {
   smoothPlayBar: false,
   smoothWidth: 22,
   currentPercentRelative: 33,

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Track = props => (
+const Track = (props) => (
   <track
     default={props.default}
     kind={props.kind}

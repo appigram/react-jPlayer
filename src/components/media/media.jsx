@@ -5,7 +5,7 @@ import Events from './events/eventsContainer';
 import Track from './track/track';
 import { classes } from '../../util/constants';
 
-const Media = props => (
+const Media = (props) => (
   <Events
     updateMediaStatus={props.updateMediaStatus}
     onAbort={props.onAbort}
@@ -36,8 +36,7 @@ const Media = props => (
       {
         ref: props.setCurrentMedia,
         className: classes.MEDIA,
-      }, props.tracks.map(track => <Track key={track.src} {...track} />))
-    }
+      }, props.tracks.map((track) => <Track key={track.src} {...track} />))}
   </Events>
 );
 

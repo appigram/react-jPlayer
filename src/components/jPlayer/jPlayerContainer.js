@@ -27,7 +27,7 @@ const mapStateToProps = ({ jPlayers }, ownProps) => {
 };
 
 const handlers = {
-  onMouseMoveCapture: props => () => {
+  onMouseMoveCapture: (props) => () => {
     if (props.fullScreen) {
       if (props.paused || props.startGuiFadeOut) {
         props.setOption(props.id, 'startGuiFadeOut', false);

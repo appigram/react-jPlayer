@@ -7,7 +7,7 @@ import containerSetup from '../util/specHelpers/containerSetup.spec';
 proxyquire.noCallThru();
 
 const id = 'TestPlayer';
-const mockBar = props => (
+const mockBar = (props) => (
   <button
     onClick={props.onClick}
     onTouchStart={props.onTouchStart}

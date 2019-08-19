@@ -54,8 +54,8 @@ const mergeProps = (stateProps, { dispatch }, { keyBindings, id }) => ({
 });
 
 const handlers = {
-  onKeyDown: props => (event) => {
-    if (keyIgnoredElementNames.some(name => name.toUpperCase()
+  onKeyDown: (props) => (event) => {
+    if (keyIgnoredElementNames.some((name) => name.toUpperCase()
         === event.target.nodeName.toUpperCase()) || !props.focused || !props.keyEnabled) {
       return;
     }

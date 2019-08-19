@@ -5,7 +5,7 @@ import Gui from './gui';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(Gui, {
+const setup = (props) => componentSetup(Gui, {
   opacity: 0.7,
   onMouseMove: expect.createSpy(),
   children: <div />,

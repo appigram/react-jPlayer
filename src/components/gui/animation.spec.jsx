@@ -5,7 +5,7 @@ import GuiAnimation from './animation';
 import Gui from './gui';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 
-const setup = props => componentSetup(GuiAnimation, {
+const setup = (props) => componentSetup(GuiAnimation, {
   guiFadeOut: false,
   fullScreen: false,
   children: <div />,

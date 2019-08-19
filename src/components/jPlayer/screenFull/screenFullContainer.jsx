@@ -11,7 +11,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  closeFullScreenListener: props => () => {
+  closeFullScreenListener: (props) => () => {
     if (!screenfull.isFullscreen && props.fullScreen) {
       props.setOption(props.id, 'fullScreen', false);
     }

@@ -19,7 +19,7 @@ const handlers = () => {
     clearBuffer: () => () => {
       canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
     },
-    fillBufferPartially: props => () => {
+    fillBufferPartially: (props) => () => {
       const modifier = canvas.width / props.duration;
       const context = canvas.getContext('2d');
 

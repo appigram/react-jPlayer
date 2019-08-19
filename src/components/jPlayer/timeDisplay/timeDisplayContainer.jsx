@@ -13,7 +13,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  setDurationText: props => () => {
+  setDurationText: (props) => () => {
     let durationText = '';
 
     if (props.showRemainingDuration) {
@@ -27,7 +27,7 @@ const handlers = {
 
     props.setOption(props.id, 'durationText', durationText);
   },
-  setCurrentTimeText: props => () => {
+  setCurrentTimeText: (props) => () => {
     const currentTimeText = convertTime(props.currentTime, props.timeFormats);
 
     props.setOption(props.id, 'currentTimeText', currentTimeText);

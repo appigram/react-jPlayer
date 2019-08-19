@@ -5,7 +5,7 @@ import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
 const id = 'TestPlayer';
-const setup = props => componentSetup(FullScreen, {
+const setup = (props) => componentSetup(FullScreen, {
   children: 'fullScreen',
   fullScreen: false,
   setFullScreen: expect.createSpy(),

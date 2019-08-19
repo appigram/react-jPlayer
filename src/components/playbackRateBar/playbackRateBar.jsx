@@ -5,7 +5,7 @@ import Bar from '../barContainer';
 import PlaybackRateBarValue from '../playbackRateBarValue/playbackRateBarValueContainer';
 import { classes } from '../../util/constants';
 
-const PlaybackRateBar = props => (
+const PlaybackRateBar = (props) => (
   <Bar
     clickMoveBar={props.clickMoveBar}
     touchMoveBar={props.touchMoveBar}

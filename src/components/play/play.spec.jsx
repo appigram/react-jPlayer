@@ -5,7 +5,7 @@ import { classes } from '../../util/constants';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 
 const id = 'TestPlayer';
-const setup = props => componentSetup(Play, {
+const setup = (props) => componentSetup(Play, {
   children: 'play',
   play: expect.createSpy(),
   paused: false,

@@ -30,7 +30,7 @@ BrowserUnsupported.propTypes = {
 
 export default compose(
   branch(
-    props => props.nonSupported,
+    (props) => props.nonSupported,
     renderComponent(BrowserUnsupported),
   ),
 )(renderNothing(null));

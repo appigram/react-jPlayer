@@ -9,7 +9,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  movePlayHead: props => (bar, e) => {
+  movePlayHead: (props) => (bar, e) => {
     const offset = getElementOffset(bar);
     const x = e.clientX - offset.left;
     const w = bar.getBoundingClientRect().width;
@@ -20,8 +20,8 @@ const handlers = {
 };
 
 const secondHandlers = {
-  clickMoveBar: props => (bar, e) => props.movePlayHead(bar, e),
-  touchMoveBar: props => (bar, e) => {
+  clickMoveBar: (props) => (bar, e) => props.movePlayHead(bar, e),
+  touchMoveBar: (props) => (bar, e) => {
     // Stop page scrolling
     e.preventDefault();
 

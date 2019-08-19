@@ -11,7 +11,7 @@ const mapStateToProps = ({ jPlayers }, { id }) => ({
 });
 
 const handlers = {
-  movePlaybackRate: props => (bar, e) => {
+  movePlaybackRate: (props) => (bar, e) => {
     const offset = getElementOffset(bar);
     const w = bar.getBoundingClientRect().width;
     const h = bar.getBoundingClientRect().height;
@@ -33,8 +33,8 @@ const handlers = {
 };
 
 const secondHandlers = {
-  clickMoveBar: props => (bar, e) => props.movePlaybackRate(bar, e),
-  touchMoveBar: props => (bar, e) => {
+  clickMoveBar: (props) => (bar, e) => props.movePlaybackRate(bar, e),
+  touchMoveBar: (props) => (bar, e) => {
     // Stop page scrolling
     e.preventDefault();
 

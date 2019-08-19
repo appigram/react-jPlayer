@@ -11,7 +11,7 @@ const Animation = ({
     defaultStyle={{ opacity: 1 }}
     style={{ opacity: fullScreen ? spring(guiFadeOut ? 0 : 1, [250]) : 1 }}
   >
-    {values => (
+    {(values) => (
       <Gui opacity={values.opacity} onMouseMove={onMouseMove}>
         {children}
       </Gui>

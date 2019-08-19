@@ -4,7 +4,7 @@ import Repeat from './repeat';
 import { classes } from '../../util/constants';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 
-const setup = props => componentSetup(Repeat, {
+const setup = (props) => componentSetup(Repeat, {
   children: 'loop',
   loop: expect.createSpy(),
   ...props,

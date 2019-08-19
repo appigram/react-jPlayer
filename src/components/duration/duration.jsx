@@ -18,7 +18,7 @@ Duration.propTypes = {
 
 export default compose(
   branch(
-    props => props.durationText,
+    (props) => props.durationText,
     renderComponent(Duration),
   ),
 )(renderNothing(null));

@@ -8,7 +8,7 @@ import ErrorLogger from './errorLogger/errorLoggerContainer';
 import TimeDisplay from './timeDisplay/timeDisplayContainer';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 
-const setup = props => componentSetup(JPlayer, {
+const setup = (props) => componentSetup(JPlayer, {
   onMouseMoveCapture: expect.createSpy(),
   className: 'jp-test',
   id: 'TestPlayer',

@@ -20,7 +20,7 @@ Poster.propTypes = {
 
 export default compose(
   branch(
-    props => props.src,
+    (props) => props.src,
     renderComponent(Poster),
   ),
 )(renderNothing(null));

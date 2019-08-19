@@ -4,7 +4,7 @@ import CurrentTime from './currentTime';
 import componentSetup from '../../util/specHelpers/componentSetup.spec';
 import { classes } from '../../util/constants';
 
-const setup = props => componentSetup(CurrentTime, {
+const setup = (props) => componentSetup(CurrentTime, {
   currentTimeText: '00:20',
   ...props,
 });

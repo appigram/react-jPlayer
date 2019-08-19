@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bar = props => (
+const Bar = (props) => (
   React.cloneElement(React.Children.only(props.children), {
     onClick: props.onClick,
     onMouseDown: props.onMouseDown,
